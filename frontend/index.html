@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section>
+      <h1>JavaScript</h1>
+      <h2>Background</h2>
+      <p>I started learning JavaScript through online tutorials and projects. I was fascinated by how it can make webpages interactive.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Event-driven</li>
+        <li>Prototype-based</li>
+        <li>Asynchronous programming</li>
+      </ul>
+
+      <h2>Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pros</th>
+            <th>Example Source Code</th>
+            <th>Extra Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Easy to learn</td>
+            <td><code>console.log("Hello, world!");</code></td>
+            <td>Great for beginners</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Cons</strong>: Can be tricky with async code
+              <br><code>setTimeout(() => console.log("Async"), 1000);</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Conclusion</h2>
+      <p>JavaScript fits my needs for building dynamic web applications with ease and speed.</p>
+
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Docs</a></li>
+        <li><a href="https://javascript.info/">JavaScript Info</a></li>
+        <li><a href="https://www.w3schools.com/js/">W3Schools JS</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Feedback</h2>
+      <form id="feedbackForm">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Status:
+          <select id="status" name="status" required>
+            <option value="">Select</option>
+            <option value="Student">Student</option>
+            <option value="Bachelor">Bachelor</option>
+          </select>
+        </label><br>
+        <label>Comments:<br><textarea name="comments" required></textarea></label><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="survey"></div>
+      <h3>Previous Feedback</h3>
+      <ul id="feedbackList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
